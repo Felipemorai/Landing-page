@@ -103,3 +103,28 @@ a {
     border: solid 2px #000;
     border-radius: 4px;
 }
+
+@media (max-width: 800px) {
+    .nav-list {
+        gap: 0px;
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 25px 30px;
+    }
+}
