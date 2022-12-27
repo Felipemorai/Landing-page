@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(241, 241, 241);
-    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
 ul {
@@ -31,12 +31,16 @@ a {
 }
 
 .logo {
+    display: inline-block;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: bold;
-    background: rgb(241, 241, 241);
-    padding: 6px 30px;
-    border: solid 3px #222;
+    background: #f0f0f0;
+    color: 000;
+    padding: 7px 30px;
+    border: solid 3px #000;
+    border-radius: 3px;
+    letter-spacing: 2.5px;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
@@ -51,7 +55,7 @@ a {
 }
 
 .nav-list li {
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
@@ -78,7 +82,7 @@ a {
 
 .title {
     text-transform: uppercase;
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-align: center;
     width: 9ch;
     letter-spacing: 1px;
@@ -88,20 +92,25 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .btn {
+    display: inline-block;
     font-size: 16px;
     font-weight: bold;
     color: #000;
     padding: 10px 20px;
+    border: 2px solid #222;
+    border-radius: 3px;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
 .btn:hover {
-    border: solid 2px #000;
-    border-radius: 4px;
+    background: #000;
+    color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -126,5 +135,13 @@ a {
 
     .container {
         padding: 25px 30px;
+    }
+
+    .title {
+        font-size: 4.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
     }
 }
